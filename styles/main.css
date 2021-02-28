@@ -26,7 +26,6 @@ section .scroller {
   width: 100% ;
   display: flex;
   text-transform: uppercase;
-    transform: rotate(-6deg);
 }
 
 section .scroller div {
@@ -35,16 +34,28 @@ section .scroller div {
   white-space: nowrap;
   color: #fff;
   background-color: #000;
-  animation: mover 40s -40s linear infinite;
+  animation: mover 37s -37s linear infinite;
   will-change: transform;
+}
+
+.scroller:nth-child(2) div {
+  animation: mover 31s -31s linear infinite;
+}
+.scroller:nth-child(3) div {
+  animation: mover 45s -45s linear infinite;
 }
 
 
 
+
 #scrollsect {
-  width: 101vw;
+  width: 100vw;
   display: block;
   padding-top: 40vh;
+}
+
+#scrollsect div {
+  transform: rotate(-6deg);
 }
 
 
@@ -52,7 +63,7 @@ section .scroller div {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
-    width: 191px;
+  width: 191px;
 }
 
 
