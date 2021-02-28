@@ -33,7 +33,6 @@ section .scroller div {
   text-transform: uppercase;
   white-space: nowrap;
   color: #fff;
-  background-color: #000;
   animation: mover 37s -37s linear infinite;
   will-change: transform;
 }
@@ -51,7 +50,6 @@ section .scroller div {
 #scrollsect {
   width: 100vw;
   display: block;
-  padding-top: 40vh;
 }
 
 #scrollsect div {
@@ -60,13 +58,17 @@ section .scroller div {
 
 
  .logo {
-  margin-left: auto;
+  margin-top: 50vh;
+  margin-left: 50vh;
   margin-right: auto;
   margin-bottom: 32px;
   width: 191px;
+  transform: translateX(50%);
 }
 
-
+  .blob {
+  position: absolute;
+}
 
 @keyframes mover {
   0% {
