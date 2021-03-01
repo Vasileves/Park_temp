@@ -2,8 +2,14 @@
   font-family: "Inter";
   src: url("inter.ttf") format("ttf"),
 }
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
 
 body {
+  position: absolute;
+  margin-left: -2px;
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -109,6 +115,7 @@ a:nth-of-type(2):hover {
 a:nth-of-type(3):hover {
     color: #6BB3DD;
 }
+
 
 .vid {
   width: 649px;
