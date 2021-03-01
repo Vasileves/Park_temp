@@ -1,7 +1,6 @@
-
 @font-face {
- font-family: "Inter";
- src: url("inter.ttf") format("ttf"),
+  font-family: "Inter";
+  src: url("inter.ttf") format("ttf"),
 }
 
 body {
@@ -9,7 +8,7 @@ body {
   overflow: hidden;
 }
 
-#scrollsect>div {
+.scrollsect>div {
   transform: rotate(-6deg);
 }
 
@@ -23,11 +22,11 @@ body {
 section {
   position: absolute;
   display: flex
-  /* overflow: hidden; */
+    /* overflow: hidden; */
 }
 
 section .scroller {
-  width: 100% ;
+  width: 100%;
   display: flex;
   text-transform: uppercase;
 }
@@ -44,22 +43,18 @@ section .scroller div {
 .scroller:nth-child(2) div {
   animation: mover 31s -31s linear infinite;
 }
+
 .scroller:nth-child(3) div {
   animation: mover 45s -45s linear infinite;
 }
 
-
-
-
-#scrollsect {
+.scrollsect {
   width: 100vw;
   display: block;
 }
 
 
-
-
- #scrollsect .logo {
+.scrollsect .logo {
   margin-top: 40vh;
   margin-left: 40vw;
   margin-right: auto;
@@ -93,28 +88,30 @@ section .scroller div {
   height: 24px;
 }
 
-.blob:nth-of-type(1){
+.blob:nth-of-type(1) {
   position: absolute;
   margin-left: -200px;
   margin-top: 21vh;
   z-index: -1;
 }
-.blob:nth-of-type(2){
-position: absolute;
-margin-top: 24vh;
-margin-left: 70vw;
-z-index: -1;
-animation: morph 10s linear infinite;
+
+.blob:nth-of-type(2) {
+  position: absolute;
+  margin-top: 24vh;
+  margin-left: 70vw;
+  z-index: -1;
+  animation: morph 10s linear infinite;
 }
 
 .blob svg {
-    animation: morph 10s ease-in-out infinite;
+  animation: morph 10s ease-in-out infinite;
 }
 
 @keyframes mover {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -124,6 +121,7 @@ animation: morph 10s linear infinite;
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -131,10 +129,69 @@ animation: morph 10s linear infinite;
 }
 
 @keyframes morph {
-  0%   { transform: scale(1)   }
-  38%  { transform: scale(0.8, 1) rotate(160deg); }
-  40%  { transform: scale(0.8, 1)  rotate(160deg); }
-  78%  { transform: scale(1.3)  rotate(-20deg); }
-  80%  { transform: rotate(-20deg); }
-  100% { transform: rotate(0) }
+  0% {
+    transform: scale(1)
+  }
+
+  38% {
+    transform: scale(0.8, 1) rotate(160deg);
+  }
+
+  40% {
+    transform: scale(0.8, 1) rotate(160deg);
+  }
+
+  78% {
+    transform: scale(1.3) rotate(-20deg);
+  }
+
+  80% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(0)
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .scrollsect {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .scrollsect>div {
+    transform: rotate(-15deg);
+  }
+
+  .scrollsect .logo {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-50%) rotate(-15deg);
+  }
+
+  .logo_img {
+    width: 68px;
+  }
+
+  .logolinks {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .logolinks a img {
+    margin-right: 8px
+  }
+
+  section .scroller div {
+    font-size: 42px;
+  }
+
+  .scrollers {
+    padding-top: 24vh;
+  }
+
 }
