@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/blobz.css">;
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="chromefix"></script>
 </head>
 
 <body>
   <section id="scrollsect" class="scrollsect">
     <div class="logo">
-      <img src="img/logo.svg" class="logo_img" />
-      <div class="logolinks"><a><img src='img/vimeo.svg' />parkproduction</a><a><img
-            src='img/insta.svg' />park.production</a><a><img src='img/mail.svg' />park@parkcinema.ru </a>
+      <img src= "img/logo.svg" class="logo_img"/>
+      <div class="logolinks"><a href="https://vimeo.com/parkproduction"><img src="img/vimeo.svg" />parkproduction</a>
+        <a href="https://www.instagram.com/park.production/"><img src="img/insta.svg"/>park.production</a>
+        <a href="mailto:park@parkcinema.ru"><img src="img/mail.svg"/>park@parkcinema.ru</a>
       </div>
     </div>
     <div class="scrollers">
@@ -57,33 +59,49 @@
     </div>
 
   </section>
+
   <div class="blob">
-    <svg width="661" height="589" viewBox="0 0 661 589" fill="none" xmlns="http://www.w3.org/2000/svg"
+    <svg fill="none" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M283.617 511.559C215.799 496.97 167.953 441.751 135.542 380.448C96.3351 306.291 46.9121 217.494 90.1626 145.653C133.158 74.2354 234.598 79.888 317.974 77.4181C385.761 75.41 450.501 90.5912 503.08 133.42C561.254 180.807 624.039 243.185 612.418 317.263C601.211 388.711 515.88 412.067 453.597 448.871C398.904 481.19 345.749 524.926 283.617 511.559Z"
-        fill="url(#pattern0)" fill-opacity="0.5" />
       <defs>
-        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlink:href="#image0" transform="translate(-0.348588) scale(0.00235719 0.00294118)" />
-        </pattern>
-        <image id="image0" width="100%" xlink:href="img/glitch3.gif" />
-      </defs>
+      <clipPath id="blclip">
+      <path>
+      	<animate id="animation-to-check" repeatCount="indefinite" fill="freeze" attributeName="d" dur="20s"
+        values="M 349.2 372 C 301 393 253 416.7 202.4 402.3 C 150.6 387.5 117.9 343.8 89.6 297.9 C 49.1 232.3 -20.1 163.1 11.2 92.6 C 43.5 19.9 140.8 -2.8 220.1 4 C 283.5 9.4 307.3 83.2 357.5 122.3 C 420.2 171.2 544.2 175.2 541.6 254.7 C 538.9 333.7 421.6 340.4 349.2 372 Z;
+        M218.1,297.5C150.3,282.9,42.1,335.3,9.6,274c-39.2-74.2,65-85,127-147c49.3-49.3,61-52.5,115.5-78.5
+      		c52-28.1,71.4-70.9,124-28.1c58.2,47.4,11.6,82,0,156.1c-11.2,71.4,97.5,78,35,140.5C311.6,416.5,280.3,310.9,218.1,297.5z;
+          M 349.2 372 C 301 393 253 416.7 202.4 402.3 C 150.6 387.5 117.9 343.8 89.6 297.9 C 49.1 232.3 -20.1 163.1 11.2 92.6 C 43.5 19.9 140.8 -2.8 220.1 4 C 283.5 9.4 307.3 83.2 357.5 122.3 C 420.2 171.2 544.2 175.2 541.6 254.7 C 538.9 333.7 421.6 340.4 349.2 372 Z;"/>
+      </path>
+      </clipPath>
+      <clipPath id="blclip2">
+      <path>
+        <animate id="anim2" repeatCount="indefinite" fill="freeze" attributeName="d" dur="20s"
+        values="M219.6,440.6C151.8,426,104,370.8,71.5,309.4c-39.2-74.2-88.6-163-45.4-234.8C69.2,3.2,170.6,8.9,254,6.4
+        	c67.8-2,132.5,13.2,185.1,56c58.2,47.4,121,109.8,109.3,183.8c-11.2,71.4-96.5,94.8-158.8,131.6
+        	C334.9,410.2,281.7,453.9,219.6,440.6z;
+
+          M174,448c-67.8-14.6-80.5-131.6-113-193C21.8,180.8,4.8,113.8,48,42c43.1-71.4,112,34,225,34
+          	c48.5,0,134.4-12.8,187,30c35,35,46.7,74,35,148c-11.2,71.4-105.9,70.9-146,111C294.3,397.4,236.1,461.3,174,448z;
+
+            M219.6,440.6C151.8,426,104,370.8,71.5,309.4c-39.2-74.2-88.6-163-45.4-234.8C69.2,3.2,170.6,8.9,254,6.4
+            	c67.8-2,132.5,13.2,185.1,56c58.2,47.4,121,109.8,109.3,183.8c-11.2,71.4-96.5,94.8-158.8,131.6
+            	C334.9,410.2,281.7,453.9,219.6,440.6z;"/>
+      </path>
+      </clipPath>
+    </defs>
     </svg>
   </div>
 
-  <div class="blob">
-    <svg width="661" height="589" viewBox="0 0 661 589" fill="none" xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink">
-
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M390.944 496.902C342.75 517.878 294.714 541.647 244.169 527.229C192.342 512.446 159.69 468.714 131.371 422.859C90.8709 357.282 21.6548 288.01 52.9214 217.561C85.204 144.823 182.53 122.133 261.818 128.94C325.178 134.38 349.058 208.18 399.202 247.29C461.894 296.187 585.888 300.188 583.259 379.651C580.647 458.599 463.373 465.38 390.944 496.902Z"
-        fill="url(#pattern0)" fill-opacity="0.5" />
-    </svg>
+  <div class="vid">
+    <video autoplay="autoplay" preload="metadata" buffered muted loop>
+         <source src="img/glitch2.mp4" type="video/mp4">
+     </video>
   </div>
 
-
-
+<div class="vid">
+  <video autoplay="autoplay" preload="metadata" buffered muted loop>
+       <source src="img/glitch3.mp4" type="video/mp4">
+   </video>
+</div>
 </body>
-
 </html>

@@ -88,23 +88,55 @@ section .scroller div {
   height: 24px;
 }
 
-.blob:nth-of-type(1) {
+.vid {
+  width: 649px;
+  height: 500px;
   position: absolute;
-  margin-left: -200px;
+  margin-left: -50px;
   margin-top: 21vh;
   z-index: -1;
+  animation: vid 60s linear infinite reverse;
+  clip-path: url(#blclip2);
+  /* background-color: red; */
 }
 
-.blob:nth-of-type(2) {
+a {
+  color: #FFFF;
+  text-decoration: inherit;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #F19388;
+  transition-duration: .0.5s;
+}
+
+a:nth-of-type(2):hover {
+    color: #F0C274;
+}
+
+a:nth-of-type(3):hover {
+    color: #6BB3DD;
+}
+
+
+
+.vid:nth-of-type(2) {
+  width: 549px;
+  height: 404px;
   position: absolute;
-  margin-top: 24vh;
   margin-left: 70vw;
+  margin-top: 0;
   z-index: -1;
-  animation: morph 10s linear infinite;
+  animation: vid 60s linear infinite;
+  clip-path: url(#blclip);
 }
 
-.blob svg {
-  animation: morph 10s ease-in-out infinite;
+video {
+  position: absolute;
+  left: -100px;
+  width: 150%;
+  height: 150%;
 }
 
 @keyframes mover {
@@ -151,6 +183,15 @@ section .scroller div {
 
   100% {
     transform: rotate(0)
+  }
+}
+
+@keyframes vid {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
