@@ -10,7 +10,7 @@ html {
 body {
   position: absolute;
   margin-left: -2px;
-  background-color: black;
+  background-color: rgb(11, 11, 11);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -24,7 +24,7 @@ body {
 .scroller {
   font-family: "Inter", sans-serif;
   font-weight: lighter;
-  color: white;
+  color: rgb(199, 199, 199);
   font-size: 25px;
 }
 
@@ -44,17 +44,24 @@ section .scroller div {
   font-size: 25px;
   text-transform: uppercase;
   white-space: nowrap;
-  color: #fff;
-  animation: mover 110s -110s linear infinite;
+  color: rgb(199, 199, 199);
+  animation: mover 120s -120s linear infinite;
   will-change: transform;
 }
 
 .scroller:nth-child(2) div {
-  animation: mover 72s -72s linear infinite;
+  animation: mover 96s -96s linear infinite;
+  animation-direction: reverse;
+
 }
 
 .scroller:nth-child(3) div {
-  animation: mover 84s -84s linear infinite;
+  animation: mover 104s -104s linear infinite;
+}
+
+.scroller:nth-child(4) div {
+  animation: mover 112s -112s linear infinite;
+  animation-direction: reverse;
 }
 
 .scrollsect {
