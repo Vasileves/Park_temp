@@ -45,16 +45,16 @@ section .scroller div {
   text-transform: uppercase;
   white-space: nowrap;
   color: #fff;
-  animation: mover 37s -37s linear infinite;
+  animation: mover 110s -110s linear infinite;
   will-change: transform;
 }
 
 .scroller:nth-child(2) div {
-  animation: mover 31s -31s linear infinite;
+  animation: mover 72s -72s linear infinite;
 }
 
 .scroller:nth-child(3) div {
-  animation: mover 45s -45s linear infinite;
+  animation: mover 84s -84s linear infinite;
 }
 
 .scrollsect {
@@ -272,17 +272,6 @@ video:nth-of-type(2) {
     margin-left: -50vw;
   }
 
-  .scroller:first-child div {
-    animation: mover 110s -110s linear infinite;
-  }
-
-  .scroller:nth-child(2) div {
-    animation: mover 72s -72s linear infinite;
-  }
-
-  .scroller:nth-child(3) div {
-    animation: mover 84s -84s linear infinite;
-  }
 
 
 
