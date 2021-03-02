@@ -14,7 +14,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  animation: safari-fix 0.2s linear;
+  animation: safari-fix 0.5s linear;
 }
 
 .scrollsect>div {
