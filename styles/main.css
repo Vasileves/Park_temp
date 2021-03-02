@@ -273,7 +273,7 @@ video:nth-of-type(2) {
   }
 
   .scroller:first-child div {
-    animation: mover 88s -88s linear infinite;
+    animation: mover 110s -110s linear infinite;
   }
 
   .scroller:nth-child(2) div {
@@ -281,7 +281,7 @@ video:nth-of-type(2) {
   }
 
   .scroller:nth-child(3) div {
-    animation: mover 80s -80s linear infinite;
+    animation: mover 84s -84s linear infinite;
   }
 
 
