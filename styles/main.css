@@ -266,19 +266,22 @@ video:nth-of-type(2) {
 
   .scroller div {
     font-size: 42px;
+  }
+
+  .scroller div:first-of-type {
     margin-left: -50vw;
   }
 
   .scroller:first-child div {
-    animation: mover 76s -76s linear infinite;
+    animation: mover 88s -88s linear infinite;
   }
 
   .scroller:nth-child(2) div {
-    animation: mover 61s -61s linear infinite;
+    animation: mover 72s -72s linear infinite;
   }
 
   .scroller:nth-child(3) div {
-    animation: mover 85s -85s linear infinite;
+    animation: mover 80s -80s linear infinite;
   }
 
 
