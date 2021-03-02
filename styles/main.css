@@ -228,7 +228,12 @@ video:nth-of-type(2) {
 
 @media screen and (max-width: 375px) {
 
-  
+
+  .scroller {
+    transform: scale(0.9);
+    margin-bottom: -4px;
+  }
+
   .scrollsect {
     display: flex;
     flex-direction: column-reverse;
@@ -239,10 +244,10 @@ video:nth-of-type(2) {
   }
 
   .scrollsect .logo {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
-    transform: translateX(-50%) rotate(-15deg);
+    transform: translateX(-30%) rotate(-15deg) scale(1.2);
   }
 
   .logo_img {
@@ -259,13 +264,41 @@ video:nth-of-type(2) {
     margin-right: 8px
   }
 
-  section .scroller div {
+  .scroller div {
     font-size: 42px;
+    margin-left: -50vw;
   }
+
+  .scroller:first-child div {
+    animation: mover 76s -76s linear infinite;
+  }
+
+  .scroller:nth-child(2) div {
+    animation: mover 61s -61s linear infinite;
+  }
+
+  .scroller:nth-child(3) div {
+    animation: mover 85s -85s linear infinite;
+  }
+
+
 
   .scrollers {
     padding-top: 24vh;
   }
+
+  .vid {
+    margin-left: -220px;
+    margin-top: -28vh;
+    opacity: 80%;
+  }
+
+  .vid:nth-of-type(2) {
+    margin-top: 25vh;
+    margin-left: 50px;
+  }
+
+
 
   @keyframes vid {
     0% {
@@ -275,17 +308,6 @@ video:nth-of-type(2) {
     100% {
       transform: scale(0.6) rotate(360deg);
     }
-  }
 
-  .vid {
-    margin-left: -220px;
-    margin-top: -28vh;
   }
-
-  .vid:nth-of-type(2) {
-    margin-top: 25vh;
-    margin-left: 50px;
-  }
-
 }
-
