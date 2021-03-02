@@ -230,7 +230,7 @@ video:nth-of-type(2) {
 
 
   .scroller {
-    transform: scale(0.9);
+    transform: scale(0.7);
     margin-bottom: -4px;
   }
 
@@ -265,7 +265,7 @@ video:nth-of-type(2) {
   }
 
   .scroller div {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .scroller div:first-of-type {
