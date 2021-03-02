@@ -14,7 +14,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  animation: safari-fix 5s linear;
+  animation: safari-fix 0.2s linear;
 }
 
 .scrollsect>div {
@@ -216,15 +216,11 @@ video:nth-of-type(2) {
 
 @keyframes safari-fix {
   0% {
-    zoom:100%;
-  }
-
-  50% {
-    zoom:101%;
+    opacity: 0%;
   }
 
   100% {
-    zoom: 100%;
+    opacity: 100%;
   }
 }
 
