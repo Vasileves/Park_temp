@@ -14,6 +14,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  animation: safari-fix 0.2s linear;
 }
 
 .scrollsect>div {
@@ -129,6 +130,7 @@ a:nth-of-type(3):hover {
   /* background-color: red; */
 }
 
+
 .vid:nth-of-type(2) {
   width: 549px;
   height: 404px;
@@ -146,6 +148,7 @@ video {
   width: 150%;
   height: 150%;
 }
+
 
 video:nth-of-type(2) {
   position: absolute;
@@ -210,6 +213,22 @@ video:nth-of-type(2) {
     transform: rotate(360deg);
   }
 }
+
+@keyframes safari-fix {
+  0% {
+    zoom:100%;
+  }
+
+  50% {
+    zoom:101%;
+  }
+
+  100% {
+    zoom: 100%;
+  }
+}
+
+
 
 @media screen and (max-width: 375px) {
 
