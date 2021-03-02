@@ -89,7 +89,7 @@ section .scroller div {
   font-weight: lighter;
   line-height: 32px;
   text-align: left;
-  color: white;
+  color: rgb(199, 199, 199);
 
 }
 
@@ -106,7 +106,7 @@ section .scroller div {
 
 
 a {
-  color: #FFFF;
+  color: #C7C7C7;
   text-decoration: inherit;
   transition: color 0.5s;
 }
