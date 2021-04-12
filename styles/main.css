@@ -7,10 +7,6 @@ html {
   width: 100vw;
 }
 
-* {
-  -webkit-display: flex
-}
-
 body {
   position: absolute;
   margin-left: -2px;
@@ -33,12 +29,14 @@ body {
 }
 
 section {
+  -webkit-display: flex;
   position: absolute;
   display: flex
     /* overflow: hidden; */
 }
 
 section .scroller {
+  -webkit-display: flex;
   width: 100%;
   display: flex;
   text-transform: uppercase;
@@ -75,6 +73,7 @@ section .scroller div {
 
 
 .scrollsect .logo {
+  -webkit-display: flex;
   margin-top: 40vh;
   margin-left: 40vw;
   margin-right: auto;
@@ -85,6 +84,7 @@ section .scroller div {
 }
 
 .logolinks {
+  -webkit-display: flex;
   margin-left: 32px;
   display: flex;
   flex-direction: column;
@@ -98,6 +98,7 @@ section .scroller div {
 }
 
 .logolinks a {
+  -webkit-display: flex;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -246,6 +247,7 @@ video:nth-of-type(2) {
   }
 
   .scrollsect {
+    -webkit-display: flex;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -255,6 +257,7 @@ video:nth-of-type(2) {
   }
 
   .scrollsect .logo {
+    -webkit-display: flex;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
