@@ -238,12 +238,21 @@ video:nth-of-type(2) {
 
 @media screen and (max-width: 414px) {
 
+
+  .scroller {
+    transform: scale(0.7);
+    margin-bottom: -10px;
+  }
+
   .scrollsect {
     -webkit-display: flex;
     display: flex;
     flex-direction: column-reverse;
   }
 
+  .scrollsect>div {
+    transform: rotate(-15deg);
+  }
 
   .scrollsect .logo {
     -webkit-display: flex;
@@ -274,6 +283,9 @@ video:nth-of-type(2) {
   .scroller div:first-of-type {
     margin-left: -50vw;
   }
+
+
+
 
   .scrollers {
     padding-top: 24vh;
